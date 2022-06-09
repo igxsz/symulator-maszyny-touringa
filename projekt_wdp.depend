@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1654521151 source:c:\users\iga\desktop\projekt_wdp\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<conio2.h>
+
