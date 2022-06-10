@@ -36,7 +36,7 @@ Najpierw zaczynamy od wyboru czy chcemy sami stworzyć tabelę z
 instrukcjami,ściągnąć ją z pliku txt czy zobaczyć przykładowe działanie
 Maszyny.\
 \
-![pierwszy\_krok](C:/Users/iga/Desktop/projekt_wdp/1.png)\
+![pierwszy\_krok](https://github.com/igxsz/symulator-maszyny-touringa/blob/main/1.png)\
 \
 Jeśli wybraliśmy pierwszą opcję - wczytanie tabeli z pliku, program
 pobierze odpowiednie dane i uzupełni tabelę.\
