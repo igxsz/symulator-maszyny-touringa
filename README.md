@@ -11,7 +11,7 @@ Turinga.
 
 
 
-#### Instrukcja instalacji
+## Instrukcja instalacji
 
 Program wykorzystuje bibliotekę *conio2.h*. W związku z tym konieczne
 będzie jej zainstalowanie oraz użycie *Code::Blocks* lub *DevC++*.
@@ -30,7 +30,7 @@ Poniżej znajduje się instrukcja dla Code::Blocks.
 
 Teraz mamy zainstalowaną potrzebną bibliotekę.
 
-#### Opis działania symulatora
+## Opis działania symulatora
 
 Najpierw zaczynamy od wyboru czy chcemy sami stworzyć tabelę z
 instrukcjami,ściągnąć ją z pliku txt czy zobaczyć przykładowe działanie
@@ -45,16 +45,16 @@ nas o ilość stanów oraz znaków dla maszyny. Dla podanych danych stworzy
 tabelę i poprosi o uzupełnienie jakie znaki ma rozpoznawać.\
 Tak wygląda uzupełniona tabela instrukcji:\
 \
-![drugi\_krok](C:/Users/iga/Desktop/projekt_wdp/2.png)\
+![drugi\_krok](https://github.com/igxsz/symulator-maszyny-touringa/blob/main/2.png)\
 \
 Następnie musimy podać ciąg znaków, na którym Maszyna ma pracować.\
 Dla przykładu *0021011*.\
 \
-![trzeci\_krok](C:/Users/iga/Desktop/projekt_wdp/5.png)\
+![trzeci\_krok](https://github.com/igxsz/symulator-maszyny-touringa/blob/main/5.png)\
 \
 Po wcisnięciu klawisza Enter, Maszyna zacznie swoją pracę.\
 \
-![trzeci\_krok](C:/Users/iga/Desktop/projekt_wdp/3.png)\
+![trzeci\_krok](https://github.com/igxsz/symulator-maszyny-touringa/blob/main/3.png)\
 \
 Po zakończeniu pracy, zobaczymy końcowy wynik oraz gdzie zatrzymała się
 głowica. Dodatkowo program poda liczbę wykonanych kroków i stan końcowy.
@@ -63,6 +63,6 @@ kolejny ciąg znaków.\
 Jeśli wybierzemy *T* i podamy ciag znaków, Maszyna wykona dokładnie
 takie same kroki i zwróci odpowiedni wyniki.\
 \
-![czwarty\_krok](C:/Users/iga/Desktop/projekt_wdp/4.png)\
+![czwarty\_krok](https://github.com/igxsz/symulator-maszyny-touringa/blob/main/4.png)
 
 
