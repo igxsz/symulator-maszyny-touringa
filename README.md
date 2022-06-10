@@ -13,6 +13,7 @@ Turinga.
 
 ## Instrukcja instalacji
 
+### Biblioteka
 Program wykorzystuje bibliotekę *conio2.h*. W związku z tym konieczne
 będzie jej zainstalowanie oraz użycie *Code::Blocks* lub *DevC++*.
 Poniżej znajduje się instrukcja dla Code::Blocks.
@@ -29,6 +30,10 @@ Poniżej znajduje się instrukcja dla Code::Blocks.
 7.  Dodać Add \"libconio.a\"
 
 Teraz mamy zainstalowaną potrzebną bibliotekę.
+
+### Pliki tekstowe
+
+Do programu możemy wczytać tabelę instrukcji z pliku txt (wyżej są podane 4 przykładowe). Aby program mógł użyć taki plik, należy go pobrać i zapisać jako *zapisInstrukcjiMT*.
 
 ## Opis działania symulatora
 
