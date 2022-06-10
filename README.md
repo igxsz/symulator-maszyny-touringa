@@ -1,1 +1,82 @@
-# symulator-maszyny-touringa[dokumentacja.txt](https://github.com/igxsz/symulator-maszyny-touringa/files/8877908/dokumentacja.txt)
+# symulator-maszyny-touringa
+
+<!DOCTYPE = html>
+
+<html lang="pl" class="h-100">
+	
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Maszyna Turinga</title>
+   
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+  </head>
+  
+<body body class="d-flex flex-column h-100">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<header>
+		<div class="container-fluid d-flex my-5 mx-1 px-1 justify-content-center">
+			<h1 class="display-2 text-center "><b>Maszyna Turinga</b> </h1>
+		</div>
+		<div class="container-fluid d-flex my-5 mx-1 px-1 justify-content-center">
+			<h3 class="dispaly-2 text-center">Ignacy Pstrągowski, Iga Szczepańska</h3>
+		</div>
+	</header>
+	
+	<div class="container">
+	<p class="lead">Przedmiotem naszego projektu było zaprojektowanie symulatora <b>Maszyny Turinga</b> używając języka C. Zgodnie z podanymi intrukcjami oraz danymi, program wykona odpowiednie działania na wzór funkcjonowania Maszyny Turinga. </p><br>
+	
+	<h4>Instrukcja instalacji </h4>
+		<p>Program wykorzystuje bibliotekę <i>conio2.h</i>. W związku z tym konieczne będzie jej zainstalowanie oraz użycie <i>Code::Blocks</i> lub <i>DevC++</i>. Poniżej znajduje się instrukcja dla Code::Blocks.
+		</p>
+		<p> 
+			<ol>
+				<li>Aby zainstalować bibliotekę <i>conio2.h</i> należy pobrać  
+				<a href="https://drive.google.com/file/d/10zTCd2c7i7yccB2tQRz2sKM6JU0YYV9j/view">pliki ZIP</a> i rozpakować je.</li>
+				<li>Następnie otworzyć folder <i>include</i> i skopiować pliki.</li>
+				<li>Wejść w folder Program files > Code::Blocks > MinGW > include i wkleić skopiowane pliki.</li>
+				<li>To samo należy powtórzyć z folderem <i>lib</i>.</li>
+				<li>Teraz trzeba otworzyć program Code::Blocks.</li>
+				<li>Wejść w Settings > Compiler > Linker Settings</li>
+				<li>Dodać Add "libconio.a"</li>
+				
+			</ol>
+			Teraz mamy zainstalowaną potrzebną bibliotekę.
+		</p>
+	
+	<h4>Opis działania symulatora</h4>
+		<p>Najpierw zaczynamy od wyboru czy chcemy sami stworzyć tabelę z instrukcjami,ściągnąć ją z pliku txt czy zobaczyć przykładowe działanie Maszyny.<br><br>
+		<img src="C:/Users/iga/Desktop/projekt_wdp/1.png" alt="pierwszy_krok" style="width: 500px; height: 250px;"><br><br>
+		Jeśli wybraliśmy pierwszą opcję - wczytanie tabeli z pliku, program pobierze odpowiednie dane i uzupełni tabelę.<br>
+		Jeśli wybraliśmy drugą opcję - stworzenie własnej tabeli, program zapyta nas o ilość stanów oraz znaków dla maszyny. Dla podanych danych stworzy tabelę i poprosi o uzupełnienie jakie znaki ma rozpoznawać.<br>
+		Tak wygląda uzupełniona tabela instrukcji:<br><br>
+		<img src="C:/Users/iga/Desktop/projekt_wdp/2.png" alt="drugi_krok" style="width: 500px; height: 265px;"><br><br>
+		Następnie musimy podać ciąg znaków, na którym Maszyna ma pracować.<br>
+		Dla przykładu <i>0021011</i>. <br><br>
+		<img src="C:/Users/iga/Desktop/projekt_wdp/5.png" alt="trzeci_krok" style="width: 500px; height: 255px;"><br><br>
+		Po wcisnięciu klawisza Enter, Maszyna zacznie swoją pracę.<br><br>
+		<img src="C:/Users/iga/Desktop/projekt_wdp/3.png" alt="trzeci_krok" style="width: 500px; height: 250px;"><br><br>
+		Po zakończeniu pracy, zobaczymy końcowy wynik oraz gdzie zatrzymała się głowica. Dodatkowo program poda liczbę wykonanych kroków i stan końcowy. Na tym etapie możemy skończyć - wciskając <i>N</i> lub wcisnąć <i>T</i> i podać kolejny ciąg znaków.<br>
+		Jeśli wybierzemy <i>T</i> i podamy ciag znaków, Maszyna wykona dokładnie takie same kroki i zwróci odpowiedni wyniki.<br><br>
+		<img src="C:/Users/iga/Desktop/projekt_wdp/4.png" alt="czwarty_krok" style="width: 500px; height: 255px;"><br><br>
+		
+		</p>
+	
+	<!--<h4>Elementy techniczne</h4>
+		<h5>Funckje z biblioteki <i>conio2.h</i>, które zostały użyte w programie:</h5>
+		<p>
+			<ul>
+				<li><i>getch();</i> - pobiera input klawisza</li>
+				<li><i>gotoxy(x,y);</i> - przenosi kursor do miejsca o danych współrzędnych</li>
+				<li><i>clrscr();</i> - czyści ekran terminala i przenosi kursor na współrzędne x=0, y=0</li>
+				<li><i>textbackground();</i> - zmienia kolor tła z czarnego na dowolny inny</li>
+			</ul>
+		</p>
+		-->
+	
+  
+  </body>
+  
+ </html>
